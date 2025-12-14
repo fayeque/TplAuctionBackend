@@ -3,6 +3,11 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 const path = require("path");
+const cors = require("cors");
+
+/* 🔥 ALLOW ALL ORIGINS */
+app.use(cors());
+app.options("*", cors());
 
 const playerRoutes = require("./routes/playerRoutes");
 const teamRoutes = require("./routes/teamRoutes");
