@@ -13,7 +13,6 @@ const teamRoutes = require("./routes/teamRoutes");
 const app = express();
 app.use(express.json());
 app.use(cors());
-app.options("*", cors());
 app.use(
   "/uploads",
   express.static(path.join(__dirname, "uploads"))
